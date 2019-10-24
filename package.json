@@ -1,0 +1,32 @@
+{
+    "name": "electron-jwq",
+    "version": "1.0.0",
+    "main": "main.js",
+    "license": "MIT",
+    "build": {
+        "appId": "com.xxx.app",
+        "mac": {
+            "target": [
+                "dmg",
+                "zip"
+            ]
+        },
+        "win": {
+            "target": [
+                "nsis",
+                "zip"
+            ]
+        }
+    },
+    "scripts": {
+        "start": "electron .",
+        "build": "electron-builder --win --x64"
+    },
+    "devDependencies": {
+        "electron": "^7.0.0",
+        "electron-builder": "^21.2.0"
+    },
+    "dependencies": {
+        
+    }
+}
